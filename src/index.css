@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #121316;
+    color: #F3F4F6;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+}
+
+/* Custom glowing pulse for active queue orders */
+.glow-amber {
+  box-shadow: 0 0 20px -5px rgba(245, 158, 11, 0.4);
+}
+
+.glow-orange {
+  box-shadow: 0 0 25px -5px rgba(255, 87, 34, 0.5);
+}
+
+.glow-green {
+  box-shadow: 0 0 25px -5px rgba(16, 185, 129, 0.5);
+}
+
+/* Smooth custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #1A1C23;
+}
+::-webkit-scrollbar-thumb {
+  background: #2E3240;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3F4457;
+}
