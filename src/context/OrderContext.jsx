@@ -8,8 +8,40 @@ const STORAGE_KEY_ORDERS = 'streetbyte_orders_v2';
 const STORAGE_KEY_VENDOR = 'streetbyte_active_vendor';
 const STORAGE_KEY_BUFFER = 'streetbyte_rush_buffers';
 const STORAGE_KEY_STOCK = 'streetbyte_stock_map';
+const STORAGE_KEY_AUTH = 'streetbyte_auth';
 
 export function OrderProvider({ children }) {
+  // --- Auth State (dummy / frontend-only for MVP) ---
+  const [authRole, setAuthRole] = useState(() => {
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY_AUTH))?.role || null; } catch { return null; }
+  });
+  const [authUser, setAuthUser] = useState(() => {
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY_AUTH))?.user || null; } catch { return null; }
+  });
+
+  // Current tab — must be declared before login/logout so setCurrentTab is in scope
+  const [currentTab, setCurrentTab] = useState(() => {
+    try {
+      const saved = JSON.parse(localStorage.getItem(STORAGE_KEY_AUTH));
+      return saved?.role === 'vendor' ? 'kitchen' : 'customer';
+    } catch { return 'customer'; }
+  });
+
+  const login = useCallback((role, name) => {
+    const user = { name, role };
+    setAuthRole(role);
+    setAuthUser(user);
+    setCurrentTab(role === 'vendor' ? 'kitchen' : 'customer');
+    localStorage.setItem(STORAGE_KEY_AUTH, JSON.stringify({ role, user }));
+  }, []);
+
+  const logout = useCallback(() => {
+    setAuthRole(null);
+    setAuthUser(null);
+    setCurrentTab('customer');
+    localStorage.removeItem(STORAGE_KEY_AUTH);
+  }, []);
+
   // 1. Active Vendor ID
   const [selectedVendorId, setSelectedVendorId] = useState(() => {
     return localStorage.getItem(STORAGE_KEY_VENDOR) || 'musa-suya';
@@ -53,7 +85,6 @@ export function OrderProvider({ children }) {
   });
 
   const [cart, setCart] = useState([]);
-  const [currentTab, setCurrentTab] = useState('customer'); // 'customer' | 'kitchen' | 'qr'
 
   // Persist states
   useEffect(() => {
@@ -289,10 +320,17 @@ export function OrderProvider({ children }) {
 
   return (
     <OrderContext.Provider value={{
+      // Auth
+      authRole,
+      authUser,
+      login,
+      logout,
+      // Vendors
       vendors: VENDORS,
       selectedVendorId,
       setSelectedVendorId,
       vendor,
+      // Orders
       orders,
       activeTicketId,
       setActiveTicketId,

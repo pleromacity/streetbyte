@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { OrderProvider, useOrders } from './context/OrderContext';
 import Navbar from './components/Navbar';
+import LandingPage from './components/Landing/LandingPage';
 import VendorDiscovery from './components/CustomerView/VendorDiscovery';
 import MenuCatalog from './components/CustomerView/MenuCatalog';
 import AIAssistant from './components/CustomerView/AIAssistant';
@@ -15,11 +16,11 @@ import {
   ArrowRight, 
   Ticket, 
   Flame, 
-  Store
 } from 'lucide-react';
 
 function AppContent() {
   const { 
+    authRole,
     currentTab, 
     cart, 
     activeTicketId, 
@@ -33,6 +34,11 @@ function AppContent() {
   const cartTotal = cart.reduce((acc, c) => acc + (c.item.price * c.quantity), 0);
   const cartCount = cart.reduce((acc, c) => acc + c.quantity, 0);
 
+  // Not authenticated: show landing page
+  if (!authRole) {
+    return <LandingPage />;
+  }
+
   return (
     <div className="min-h-screen bg-street-charcoal text-slate-100 flex flex-col font-sans selection:bg-street-orange selection:text-white">
       
@@ -42,8 +48,8 @@ function AppContent() {
       {/* Main Content */}
       <main className="flex-1 max-w-7xl w-full mx-auto p-4 sm:p-6 pb-24 sm:pb-16">
         
-        {/* VIEW 1: CUSTOMER VIEW */}
-        {currentTab === 'customer' && (
+        {/* BUYER ENVIRONMENT */}
+        {authRole === 'buyer' && currentTab === 'customer' && (
           <div>
             {showingTicketView && activeTicketId ? (
               <LiveQueueTicket
@@ -83,28 +89,23 @@ function AppContent() {
                 {/* Multi-Vendor Discovery Strip */}
                 <VendorDiscovery />
 
-                {/* Hero Stall Banner for Active Vendor */}
+                {/* Hero Stall Banner */}
                 <div className={`relative rounded-3xl overflow-hidden bg-gradient-to-r ${vendor.bannerBg || 'from-amber-950/60 to-street-surface'} border border-street-border p-5 sm:p-7 shadow-xl`}>
                   <div className="max-w-2xl space-y-2">
                     <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-street-orange/20 text-street-orange border border-street-orange/30 text-xs font-bold">
                       <Flame className="w-3.5 h-3.5" />
                       <span>{vendor.stallNumber} • {vendor.tagline}</span>
                     </div>
-
                     <h1 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
                       Order from {vendor.name}
                     </h1>
-                    
                     <p className="text-xs sm:text-sm text-slate-300">
-                      Skip the sidewalk queues. Speak or type your order below — StreetByte syncs your walking ETA with {vendor.owner}'s kitchen!
+                      Skip the queues. Speak or type your order — StreetByte syncs your walking ETA with {vendor.owner}'s kitchen!
                     </p>
                   </div>
                 </div>
 
-                {/* AI Assistant */}
                 <AIAssistant />
-
-                {/* Menu Catalog for Active Stall */}
                 <MenuCatalog />
 
               </div>
@@ -112,15 +113,15 @@ function AppContent() {
           </div>
         )}
 
-        {/* VIEW 2: KITCHEN KDS VIEW */}
-        {currentTab === 'kitchen' && (
+        {/* VENDOR ENVIRONMENT — Kitchen KDS */}
+        {authRole === 'vendor' && currentTab === 'kitchen' && (
           <div className="animate-fadeIn">
             <KitchenDashboard />
           </div>
         )}
 
-        {/* VIEW 3: COUNTER QR STAND VIEW */}
-        {currentTab === 'qr' && (
+        {/* VENDOR ENVIRONMENT — Counter QR */}
+        {authRole === 'vendor' && currentTab === 'qr' && (
           <div className="animate-fadeIn">
             <CounterStand />
           </div>
@@ -128,8 +129,8 @@ function AppContent() {
 
       </main>
 
-      {/* Floating Bottom Cart Bar */}
-      {currentTab === 'customer' && !showingTicketView && cartCount > 0 && (
+      {/* Floating Bottom Cart Bar — buyers only */}
+      {authRole === 'buyer' && currentTab === 'customer' && !showingTicketView && cartCount > 0 && (
         <div className="fixed bottom-4 left-4 right-4 max-w-lg mx-auto z-30 animate-bounce-short">
           <div className="bg-street-orange text-white rounded-2xl p-3.5 shadow-2xl shadow-street-orange/40 flex items-center justify-between border border-white/20">
             <div className="flex items-center gap-3">
@@ -174,19 +175,11 @@ function AppContent() {
       />
 
       {/* Footer */}
-      <footer className="border-t border-street-border/60 bg-street-card/40 py-6 px-4 text-center text-xs text-slate-500">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
-          <div className="flex items-center gap-2">
-            <span className="font-extrabold text-slate-300">StreetByte Multi-Vendor Hub</span>
-            <span>•</span>
-            <span>Built by Wanaemi Watson for <strong className="text-slate-300">TECHOFF 2026</strong></span>
-          </div>
-
-          <div className="flex items-center gap-3 text-[11px]">
-            <span className="text-street-orange font-semibold">#TechOff2026</span>
-            <span>•</span>
-            <span className="text-street-amber font-semibold">#EverybodyCanBuild</span>
-          </div>
+      <footer className="border-t border-street-border/60 bg-street-card/40 py-5 px-4 text-center text-xs text-slate-500">
+        <div className="max-w-7xl mx-auto">
+          <span className="font-semibold text-slate-400">StreetByte</span>
+          <span className="mx-2">•</span>
+          <span>© 2026 Wanaemi Watson. All rights reserved.</span>
         </div>
       </footer>
 

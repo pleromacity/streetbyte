@@ -1,0 +1,10 @@
+﻿import React, { useState } from 'react';
+import { useOrders } from '../../context/OrderContext';
+import { Flame, ShoppingBag, ArrowRight, User, Lock, Store } from 'lucide-react';
+
+function AuthCard({ role, icon: Icon, title, subtitle, accentClass, borderClass, bgClass }) {
+  const { login } = useOrders();
+  const [tab, setTab] = useState('login');
+  const [name, setName] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');

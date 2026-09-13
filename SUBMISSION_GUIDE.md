@@ -1,128 +1,130 @@
-# StreetByte — TECHOFF 2026 Submission & Pitch Kit (Multi-Vendor Hub Edition)
-**Theme**: *Everybody Can Build*  
-**Builder**: Wanaemi Watson  
-**Project**: StreetByte (Smart AI Food Hub & Multi-Vendor Queues)  
-**Target Vendors**: Mallam Musa (Stall 4: Suya Master) & Mama Blessing (Stall 7: Queen of Jollof)  
+# StreetByte — TECHOFF 2026 Video Submission Playbook
+### Inspired by the Viral Creator Format (David Odunlami `@odunlami_`: *"Built an app that tracks my electricity supply"*)
 
 ---
 
-## 1. Hackathon Submission Overview
+## 🎯 Why David Odunlami's Video Went Viral (16K+ Likes)
 
-| Requirement | Specification | Our Implementation |
-|---|---|---|
-| **Format** | 1 phone video, under 90 seconds | Exactly 85-second scripted shoot, 3 distinct beats |
-| **Beat 1** | The person & their problem | Street junction chaos: Mallam Musa's suya grill + Mama Blessing's jollof buka both choked with 25-minute queues, lost lunch revenue, fake bank transfer fears |
-| **Beat 2** | What you built for them | StreetByte Multi-Vendor Hub: AI voice/chat assistant across both stalls, instant bank reconciliation, live ticket (#SB-104), kitchen KDS for each vendor |
-| **Beat 3** | Them actually using it & real reaction | Musa & Mama Blessing’s phones dinging with orders, moving tickets to cooking, calling numbers; customers picking up hot meals without waiting |
-| **Production** | No editing, no high-end production | Filmed on a single smartphone in 1-2 continuous takes |
-| **Hashtags** | Mandatory tags | `#TechOff2026` `#EverybodyCanBuild` |
-| **Tag Account** | Social account | `@TechOffHack` |
-| **Direct Contact**| WhatsApp / Email | `+2349039049828` / `partnerships@techoffhack.com` |
-
----
-
-## 2. The 85-Second Video Script (Shot-by-Shot)
-
-### 🎬 Scene 1: The People & The Problem (0:00 – 0:25)
-- **Visual**: Camera pans across the busy food junction showing Musa at the charcoal grill and Mama Blessing at her jollof pots with hungry crowds clustered around.
-- **Wanaemi (Speaking to camera)**:
-  > *"Meet Mallam Musa and Mama Blessing. They make the best street suya and firewood party jollof on our road.*  
-  > *Every day during lunch and evening rush, this entire junction turns into pure chaos. Customers on a 30-minute break spend 25 minutes standing in heat and smoke. Orders get mixed up, people fight over who was first in line, and vendors have to stop cooking with oily hands just to verify delayed bank alerts. Worst of all, hungry people take one look at the crowd and walk away."*
-
-### 🎬 Scene 2: What You Built For Them (0:25 – 0:50)
-- **Visual**: Cut to your phone showing the StreetByte Multi-Vendor Hub app.
-- **Wanaemi (Demonstrating on phone)**:
-  > *"So I built StreetByte — a multi-vendor smart queue platform.*  
-  > *From one single link or counter QR code, anyone can browse both stalls. Even better, watch our AI assistant: I can speak in plain street slang — 'Give me party jollof with dodo and turkey from Mama Blessing, and 2 beef suya with extra yaji from Musa'.*  
-  > *StreetByte instantly understands, verifies payment directly to each vendor's bank account, and gives me live digital tickets telling me exactly when to walk over."*
-
-### 🎬 Scene 3: The Vendors Actually Using It & Real Reaction (0:50 – 1:20)
-- **Visual**: Camera pans to Musa and Mama Blessing’s phones propped up running the StreetByte Kitchen KDS.
-- **Action**: 
-  - An audible chime dings: 🔔 *"Order #SB-104: 2x Beef Suya, Extra Yaji!"*
-  - Musa taps **[Start Kitchen Preparation]** on his screen with a smile.
-  - Mama Blessing packages the jollof, taps **[Pack & Announce Ready!]**.
-  - The voice speaker announces: 📢 *"Order SB 104 is ready for pickup at Stall 7!"*
-  - A customer walks up, flashes ticket `#SB-104`, collects the hot steaming takeaway pack, and leaves in 5 seconds.
-- **Real Reaction (Musa & Mama Blessing)**:
-  > **Musa**: *"Ah, this thing sweet die! Before, people dey shout, I no dey fit hear order. Now, phone dey ring, I see everything clear, no more fake alert!"*  
-  > **Mama Blessing**: *"Sales don double! People order from their office, money dey enter, dem just come pick up their food without noise!"*
-
-### 🎬 Scene 4: Outro & Sign-Off (1:20 – 1:30)
-- **Visual**: Wanaemi holding up the phone with Musa and Mama Blessing smiling beside their stalls.
-- **Wanaemi**:
-  > *"Real street vendors. Real problems. Solved with AI.*  
-  > *This is StreetByte, built by Wanaemi Watson for TechOff 2026. Everybody can build!"*
+1. **The 3-Second Text Hook**:
+   - Big, centered, clean on-screen text overlay: *"I built an app that..."*
+   - Immediate relatability to an everyday Nigerian frustration.
+2. **Casual, First-Person Talking Head**:
+   - No suit, no slides, no corporate pitch jargon. Just a creator talking straight into their phone camera like they're telling a friend on WhatsApp.
+3. **Raw "Show-and-Tell" Proof**:
+   - You don't just explain code — you physically show the setup in its messy, real-world context (the charcoal grill, the smoke, the counter, the smartphone propped on the table).
+4. **Dynamic Cut-Aways & Jump Cuts**:
+   - Quick 2–4 second cuts that keep viewer retention high on Reels / TikTok.
+5. **Real Human Reaction**:
+   - The genuine smile and relief of the person the app was built for.
 
 ---
 
-## 3. Practical Smartphone Filming Tips (Zero Editing Required)
+## 📱 Shot-by-Shot Video Blueprint (9:16 Vertical Phone Video)
 
-1. **Audio First**:
-   - Hold your phone 1–2 feet from your mouth when speaking, or plug in a pair of wired earphones with a microphone.
-2. **One Continuous or Pausable Take**:
-   - Use the **Pause/Resume** button on your smartphone camera app to move between scenes without needing editing software!
-3. **Sound Check**:
-   - Set the volume on Musa's and Mama Blessing's phones to 100% so the chime and speech alert *"Order SB-104 is ready"* are picked up loudly on camera.
+**Total Duration**: ~80 seconds (Well within TechOff’s 90-second limit)  
+**Target Resolution**: 1080x1920 (9:16 vertical)  
+**On-Screen Hook Text**: `"I built an app for the suya man on my street"`
 
 ---
 
-## 4. Social Media Posting Copy
+### [0:00 – 0:18] Scene 1: The Relatable Street Chaos
+- **Camera**: Selfie mode, walking towards Musa’s suya grill and Mama Blessing’s spot.
+- **On-Screen Text**: `I built an app for the food vendors on my street 🍢🍲`
+- **What to Say (Natural, relaxed voice)**:
+  > *"So every evening around 7 PM, the food junction on my street turns into complete madness.  
+  > Mallam Musa makes the best charcoal suya, and Mama Blessing makes the craziest party jollof, but to get food, you have to stand in thick smoke for 25 minutes."*
+- **Cut (0:12 - 0:18)**: Flip camera to rear. Show the smoke, the sizzling meat, and people waiting.
+  > *"People cut the line, orders get mixed up, and Musa has to stop grilling with oily hands just to check his phone for delayed bank alerts. A lot of hungry people just walk away."*
 
-### 🐦 Twitter / X Post
+---
+
+### [0:18 – 0:45] Scene 2: The Build & How It Works
+- **Camera**: Holding your phone in hand, showing the StreetByte app on screen.
+- **On-Screen Text**: `StreetByte — Smart AI queues for street food 📱`
+- **What to Say**:
+  > *"So I built StreetByte for them.  
+  > It’s a multi-vendor web app that eliminates physical queues completely. Anyone can scan the stall QR code or order before leaving the office."*
+- **Live Demo Action**:
+  - Show your finger tapping the microphone button on the screen:
+  - Say aloud to the phone:  
+    > *"Give me 2 beef suya, extra yaji, onions on the side, and 1 cold malt from Musa."*
+  - Show the screen parsing the street slang into the cart in 1 second!
+  - Tap **Simulate Instant Payment**:
+  - Point to the generated ticket:  
+    > *"Boom. Instant verified payment, no fake alert wahala, and I get digital ticket #SB-104 telling me to leave my desk in 6 minutes."*
+
+---
+
+### [0:45 – 1:15] Scene 3: The Vendors Using It Live & Real Reaction
+- **Camera**: Move over to Musa’s grill table where his smartphone is propped up running the **StreetByte Kitchen KDS**.
+- **Audio**: Let Musa’s phone chime out loud: 🔔 *"Order #SB-104: 2x Beef Suya!"*
+- **Action**:
+  - Musa taps **[Put on Charcoal Grill]** with his thumb and laughs.
+  - Musa wraps the suya in foil, taps **[Pack & Call Ready!]**.
+  - StreetByte’s speaker announces: 📢 *"Order SB 104 is ready for pickup!"*
+  - Wanaemi steps forward, shows ticket `#SB-104`, collects the hot pack.
+- **Musa's Real Reaction (Unscripted, genuine)**:
+  > **Wanaemi**: *"Mallam Musa, how you see am?"*  
+  > **Musa (Smiling, holding tongs)**:  
+  > *"Ah, oga this thing make sense! No more shouting, my hand no need to touch phone for bank alert again. Food ready, customer collect, money dey account!"*
+- **Cut to Mama Blessing (Quick 4-second pan)**:
+  > **Mama Blessing**: *"Sales dey move fast without crowd! This is sweet!"*
+
+---
+
+### [1:15 – 1:25] Scene 4: The Outro
+- **Camera**: Selfie mode, holding the warm suya pack, Musa giving a thumbs-up behind you.
+- **On-Screen Text**: `#TechOff2026 #EverybodyCanBuild`
+- **What to Say**:
+  > *"One real problem. Two real street vendors. Solved with AI.  
+  > This is StreetByte for TechOff 2026. Everybody can build!"*
+
+---
+
+## ✂️ Practical Filming & Editing Tips
+
+1. **Use Auto-Captions (Critical for Engagement)**:
+   - In Instagram Reels or CapCut, tap **Captions ➔ Auto-Generate**.
+   - Style: High-contrast white text with yellow or orange active word highlights (just like David Odunlami’s video). Over 70% of people watch social reels with sound muted initially!
+2. **Shoot in 1 Continuous Session with Pause**:
+   - You don't need Premiere Pro or a laptop to edit.
+   - Use the **Pause / Record** button built into your phone's native camera app.
+   - Shoot Scene 1 ➔ hit Pause ➔ walk to Musa’s grill ➔ hit Record for Scene 2 & 3 ➔ hit Pause ➔ turn camera for Outro!
+3. **Sound Clarity**:
+   - Put your phone’s microphone close when talking so your voice cuts above the sizzling meat and street sounds.
+   - Make sure Musa’s phone is on **100% volume** so the kitchen chime rings clearly.
+
+---
+
+## 🚀 Viral Social Media Caption Package
+
+### 📸 Instagram Reel Caption (Copy & Paste)
 ```text
-Meet Mallam Musa (Suya master) & Mama Blessing (Jollof queen). 
+built an app for the suya man on my street 🍢🔥
 
-Every day, their stalls get overcrowded, people waste their 30-min break waiting in smoke, and vendors lose money from fake transfer anxiety.
+Every evening around 7 PM, the food junction on my road turns into chaotic queues. People on short breaks spend 25 minutes standing in smoke, orders get mixed up, and vendors lose sales from delayed bank alert checks.
 
-So I built StreetByte — a multi-vendor AI queue platform that lets customers order with natural voice, get live queue ETAs, and enables vendors to run an automated kitchen display system.
+So I built StreetByte for Mallam Musa (suya master) and Mama Blessing (queen of party jollof). 
 
-Watch their real reaction when we tested it live! 👇🔥🍲
+It lets customers order with AI voice in street slang ("2 beef suya, extra yaji, onions on the side"), validates instant payment so vendors never worry about fake alerts, and runs an automated kitchen board with audio alerts.
 
-#TechOff2026 #EverybodyCanBuild @TechOffHack
+Watch their real reaction when we tested it! 😂🔥
+
+What street food vendor on your road needs this? Tag them below! 👇
+
+Built for @techoffhack 
+#TechOff2026 #EverybodyCanBuild #AI #StreetFood #TechInAfrica
 ```
 
-### 💼 LinkedIn Post
+### 🐦 X (Twitter) Post
 ```text
-For TECHOFF 2026 ("Everybody Can Build"), the brief asked: 
-Find someone with a real problem. Build them something.
+built an app for the suya man on my street 🍢🔥
 
-I looked at our local food street vendors — Mallam Musa (Stall 4) and Mama Blessing (Stall 7). During peak hours, busy professionals and students walk away because they don't have 25 minutes to stand in smoke and chaotic queues.
+Every evening, Mallam Musa's grill gets overwhelmed with queues and fake alert checks. 
 
-I built StreetByte:
-🍢 Multi-Vendor Food Hub (order from multiple stalls in one place)
-🤖 AI Voice & Slang Assistant (understands "extra yaji, dodo, no onions")
-⚡ Instant Automated Bank Reconciliation (eliminates fake transfer stress)
-⏱️ Walking ETA Sync (tells customers when to leave their desk)
-🔥 High-Contrast Kitchen KDS with audio & speech announcements
+So I built StreetByte for @techoffhack — an AI queue hub where customers speak their order in street slang and skip the smoke.
 
-Check out the 85-second video of the vendors using it live at their stalls!
+Watch his reaction! 👇
 
-#TechOff2026 #EverybodyCanBuild #AI #ProductDesign #SoftwareEngineering #NigeriaTech
-```
-
----
-
-## 5. Direct Submission Details
-
-- **Email**: `partnerships@techoffhack.com`
-- **WhatsApp**: `+2349039049828`
-- **Subject**: `TECHOFF 2026 Submission — StreetByte (Wanaemi Watson)`
-- **Body**:
-```text
-Dear TechOff Team,
-
-Here is my official submission for TECHOFF 2026: Everybody Can Build.
-
-- Project Name: StreetByte Multi-Vendor Hub
-- Builder: Wanaemi Watson
-- Vendors Built For: Mallam Musa (Stall 4: Charcoal Suya) & Mama Blessing (Stall 7: Party Jollof & Asun)
-- Video Link: [INSERT PUBLIC VIDEO LINK]
-- Live Web App Demo: [INSERT YOUR VERCEL/NETLIFY LINK]
-- GitHub / Source Code: [INSERT GITHUB LINK IF APPLICABLE]
-
-Thank you for championing grassroots builders solving real problems!
-
-Best regards,
-Wanaemi Watson
+#TechOff2026 #EverybodyCanBuild
 ```
